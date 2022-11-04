@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wecheat3"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/title"></include>
+
+    <ImageView
+        android:id="@+id/pulldown"
+        android:layout_width="113dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="7dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:srcCompat="@drawable/pull" />
+
+    <EditText
+        android:id="@+id/editView_typename"
+        android:layout_width="40dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/white"
+        android:hint="路人甲"
+        android:textColor="@color/dark_gray"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/entry"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/title2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="61dp"></include>
+
+    <TextView
+        android:id="@+id/textView_username"
+        android:layout_width="67dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="26dp"
+        android:textStyle="bold"
+        android:text="贾臭臭"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView_timer"
+        android:layout_width="115dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="30dp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="TextView"
+        android:textColor="@color/wecheat_text"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <ImageView
+        android:id="@+id/imageView_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:srcCompat="@drawable/black_popup"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
